@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="importmap">
+      {
+        "imports": {
+          "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+          "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+          "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"
+        }
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="patient-form">
+        <h1>Patient Details</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <label for="bloodType">Blood Type:</label>
+            <input type="text" id="bloodType" placeholder="e.g., O+" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Medical History</legend>
+            <div class="condition-entry">
+                <h4>Condition 1</h4>
+                <label>Condition Name:</label>
+                <input type="text" class="condition-name">
+                <label>Date Diagnosed:</label>
+                <input type="date" class="condition-date">
+                <label>Notes:</label>
+                <textarea class="condition-notes" rows="2"></textarea>
+            </div>
+            <div class="condition-entry">
+                <h4>Condition 2</h4>
+                <label>Condition Name:</label>
+                <input type="text" class="condition-name">
+                <label>Date Diagnosed:</label>
+                <input type="date" class="condition-date">
+                <label>Notes:</label>
+                <textarea class="condition-notes" rows="2"></textarea>
+            </div>
+            <div class="condition-entry">
+                <h4>Condition 3</h4>
+                <label>Condition Name:</label>
+                <input type="text" class="condition-name">
+                <label>Date Diagnosed:</label>
+                <input type="date" class="condition-date">
+                <label>Notes:</label>
+                <textarea class="condition-notes" rows="2"></textarea>
+            </div>
+            <div class="condition-entry">
+                <h4>Condition 4</h4>
+                <label>Condition Name:</label>
+                <input type="text" class="condition-name">
+                <label>Date Diagnosed:</label>
+                <input type="date" class="condition-date">
+                <label>Notes:</label>
+                <textarea class="condition-notes" rows="2"></textarea>
+            </div>
+            <div class="condition-entry">
+                <h4>Condition 5</h4>
+                <label>Condition Name:</label>
+                <input type="text" class="condition-name">
+                <label>Date Diagnosed:</label>
+                <input type="date" class="condition-date">
+                <label>Notes:</label>
+                <textarea class="condition-notes" rows="2"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Allergies</legend>
+            <div class="allergy-entry">
+                <h4>Allergy 1</h4>
+                <label>Allergen:</label>
+                <input type="text" class="allergen-name">
+                <label>Severity:</label>
+                <select class="allergy-severity">
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                </select>
+                <label>Reaction:</label>
+                <textarea class="allergy-reaction" rows="2"></textarea>
+            </div>
+             <div class="allergy-entry">
+                <h4>Allergy 2</h4>
+                <label>Allergen:</label>
+                <input type="text" class="allergen-name">
+                <label>Severity:</label>
+                <select class="allergy-severity">
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                </select>
+                <label>Reaction:</label>
+                <textarea class="allergy-reaction" rows="2"></textarea>
+            </div>
+             <div class="allergy-entry">
+                <h4>Allergy 3</h4>
+                <label>Allergen:</label>
+                <input type="text" class="allergen-name">
+                <label>Severity:</label>
+                <select class="allergy-severity">
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                </select>
+                <label>Reaction:</label>
+                <textarea class="allergy-reaction" rows="2"></textarea>
+            </div>
+             <div class="allergy-entry">
+                <h4>Allergy 4</h4>
+                <label>Allergen:</label>
+                <input type="text" class="allergen-name">
+                <label>Severity:</label>
+                <select class="allergy-severity">
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                </select>
+                <label>Reaction:</label>
+                <textarea class="allergy-reaction" rows="2"></textarea>
+            </div>
+             <div class="allergy-entry">
+                <h4>Allergy 5</h4>
+                <label>Allergen:</label>
+                <input type="text" class="allergen-name">
+                <label>Severity:</label>
+                <select class="allergy-severity">
+                    <option value="Mild">Mild</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                </select>
+                <label>Reaction:</label>
+                <textarea class="allergy-reaction" rows="2"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit">Save Profile</button>
+    </form>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
